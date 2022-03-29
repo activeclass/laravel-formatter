@@ -15,7 +15,7 @@ class CsvParser extends Parser
             if ($delimiter) {
                 $this->csv->setDelimiter($delimiter);
             }
-            $this->csv->setEnclosure('|');
+            $this->csv->setEnclosure('"');
         } else {
             throw new InvalidArgumentException(
                 'CsvParser only accepts (string) [csv] for $data.'
